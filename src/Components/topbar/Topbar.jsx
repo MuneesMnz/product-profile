@@ -7,14 +7,14 @@ const Topbar = ({menuOpen,setMenuOpen}) => {
     <div className={`topbar ${menuOpen && "active"}`}>
       <div className='wrapper'>
         <div className='left'>
-          <a href='#intro' className='logo'>Logo</a>
+          <a href='#intro' className='logo'>Logo </a>
           <div className="itemContainer">
             <BsFillPersonFill className='icon' />
             <span>+91 97472 56118</span>
           </div>
           <div className="itemContainer">
             <BiLogoGmail className='icon' />
-            <span>mnz@gmail.com</span>
+            <span >mnz@gmail.com</span>
           </div>
         </div>
         <div className='right'>

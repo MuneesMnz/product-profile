@@ -1,3 +1,17 @@
-.testimonials{
-    background-color: aqua;
+.testimonials {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .container{
+    .card{
+        .top{
+            img{
+                &.left,&.right{
+                    height: 25px;
+                }
+            }
+        }
+    }
+  }
 }
