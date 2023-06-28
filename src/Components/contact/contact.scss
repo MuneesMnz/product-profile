@@ -1,66 +1,84 @@
-.contact{
-    background-color: white;
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+  }
+  .right {
+    flex: 1;
     display: flex;
-    .left{
-        flex: 1;
-        overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 50px;
+      overflow: hidden;
+      @include mobile {
+        font-size: 25px;
+      }
     }
-    .right{
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
 
-        h2{
-            font-size: 50px;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 70%;
+      justify-content: space-around;
+      align-items: center;
+      @include mobile {
+        height: 100%;
+        justify-content: space-evenly;
+      }
+
+      input {
+        width: 90%;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        outline: none;
+        font-size: 14px;
+        @include mobile {
+          width: 200px;
+          height: 25px;
         }
-
-        form{
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            height: 70%;
-            justify-content: space-around;
-            align-items: center;
-
-            input{
-                width:90%;
-                height: 40px;
-                box-sizing: border-box;
-                padding: 5px 10px;
-                outline: none;
-                font-size: 14px;
-                
-            }
-            textarea{
-                width: 90%;
-                height: 180px;
-                box-sizing: border-box;
-                outline: none;
-            }
-            button{
-                width: 150px;
-                height: 40px;
-                color: white;
-                background-color: crimson;
-                border: none;
-                font-size: 16px;
-                font-weight: 600;
-                border-radius: 10px;
-                cursor: pointer;
-
-                &:focus{
-                    outline: none;
-                }
-
-            }
-            span{
-                color: green;
-            }
-
+      }
+      textarea {
+        width: 90%;
+        height: 180px;
+        box-sizing: border-box;
+        outline: none;
+        @include mobile {
+          width: 200px;
+          height: 100px;
         }
+      }
+      button {
+        width: 150px;
+        height: 40px;
+        color: white;
+        background-color: crimson;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        cursor: pointer;
 
+        &:focus {
+          outline: none;
+        }
+      }
+      span {
+        color: green;
+      }
     }
+  }
 }

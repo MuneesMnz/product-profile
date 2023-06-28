@@ -1,19 +1,24 @@
+@import "../../global.scss";
+
 .work {
   background-color: crimson;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .arrow{
+  .arrow {
     height: 50px;
     position: absolute;
-    cursor: pointer;
-    &.left{
-        left: 100px;
-        transform: rotateY(180deg);
+    @include mobile {
+      display: none;
     }
-    &.right{
-        right: 100px;
+    cursor: pointer;
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+    &.right {
+      right: 100px;
     }
   }
   .slider {
@@ -22,6 +27,11 @@
     left: 0;
     display: flex;
     transition: all 1s ease-out;
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
     .container {
       width: 100vw;
       display: flex;
@@ -36,6 +46,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile {
+          width: 90%;
+          height: 200px;
+          margin: 20px 0;
+        }
         .left {
           flex: 4;
           height: 80%;
@@ -81,7 +96,7 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
-          img{
+          img {
             width: 400px;
             transform: rotate(-10deg);
           }

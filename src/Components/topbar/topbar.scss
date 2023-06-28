@@ -24,11 +24,15 @@
         font-weight: 700;
         color: inherit;
         margin-right: 40px;
+        text-decoration: none;
       }
       .itemContainer{
         display: flex;
         align-items: center;
         margin-right: 30px;
+        @include mobile{
+          display: none;
+      }
         .icon{
             font-size: 22px;
             margin-right: 5px;

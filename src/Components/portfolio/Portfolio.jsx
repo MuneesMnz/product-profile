@@ -88,41 +88,6 @@ const Portfolio = () => {
               )
           })
         }
-        {/* <div className="item">
-          <img
-            src="https://oceanwp.org/wp-content/uploads/2021/09/wordpress-template-startup-1-768x432.png"
-            alt=""
-          />
-          <h3>Item Title</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://oceanwp.org/wp-content/uploads/2021/09/wordpress-template-startup-1-768x432.png"
-            alt=""
-          />
-          <h3>Item Title</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://oceanwp.org/wp-content/uploads/2021/09/wordpress-template-startup-1-768x432.png"
-            alt=""
-          />
-          <h3>Item Title</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://oceanwp.org/wp-content/uploads/2021/09/wordpress-template-startup-1-768x432.png"
-            alt=""
-          />
-          <h3>Item Title</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://oceanwp.org/wp-content/uploads/2021/09/wordpress-template-startup-1-768x432.png"
-            alt=""
-          />
-          <h3>Item Title</h3> */}
-        {/* </div> */}
       </div>
     </div>
   );
